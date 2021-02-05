@@ -6,9 +6,6 @@ module.exports = function towelSort (matrix) {
 
 function doTowelSort(matrix){
   const result = [];
-  if (matrix === undefined) {
-    return result
-  }
   for (let index = 0; index < matrix.length; index++) {
     if (index % 2 === 1 ) {
       let tmpReverseArray = matrix[index].reverse();
@@ -22,7 +19,6 @@ function doTowelSort(matrix){
       }
     }
   }
-  console.log(result);
   return  result;
 }
 
